@@ -17,7 +17,7 @@ const loadscript= (src)=>
 
     }
 
-loadscript('https://cdWn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js')
+loadscript('https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js')
 
 .then(  
     (d)=>{console.log('ressolve11 ' + d); }
