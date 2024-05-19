@@ -1,21 +1,22 @@
-const loadscript= (src)=>
-    {
-        return new Promise((resolve,reject)=>{
-        let script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src= src;
-        document.body.appendChild(script);
-        script.onload= ()=>{
+let script = document.createElement('script');
+script.type = 'text/javascript';
+document.body.appendChild(script);
+
+
+function loadscript(src) {
+    script.src = src;
+    return new Promise((resolve, reject) => {
+         script.onload = () => {
             resolve('script loaded')
         }
-        script.onerror=()=>{
+        script.onerror = () => {
             reject('not loaded')
         }
-        
-        }
-    )
 
     }
+    )
+
+}
 
 loadscript('https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js')
 
