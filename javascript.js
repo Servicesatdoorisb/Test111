@@ -1,28 +1,28 @@
-let script = document.createElement('script');
-script.type = 'text/javascript';
-document.body.appendChild(script);
+
+// const nums = [1,2,3,4,5];
+// console.log(nums);
+// const nums2= nums.map((num)=>2*num)
+// console.log(nums2);
+// const evens= nums.filter((num)=>num%2==0)
+// console.log(evens);
+// const sum= nums.reduce((accumulator,num)=>accumulator+num)
+// console.log(sum);
 
 
-function loadscript(src) {
-    script.src = src;
-    return new Promise((resolve, reject) => {
-         script.onload = () => {
-            resolve('script loaded')
-        }
-        script.onerror = () => {
-            reject('not loaded')
-        }
+const n = [11,12,13,14,15];
+n.map((i,k)=>{console.log('nums2['+ k + '] = ' + i);})
+const a=n.map((i)=>{return i*3})
+console.log(a)
 
-    }
-    )
+const aa=n.filter((i)=>{return i>13})
+console.log(aa)
 
+
+function abc(x,i)
+{
+    return i+x  
 }
 
-loadscript('https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js')
+const aaa=n.reduce(abc)
+console.log(aaa)
 
-.then(  
-    (d)=>{console.log('ressolve11 ' + d); }
-)
-.catch(  
-    (d)=>{console.log('reject11 ' + d); }
-)

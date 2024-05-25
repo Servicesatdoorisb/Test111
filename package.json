@@ -1,0 +1,23 @@
+{
+  "name": "mynodeaaa",
+  "version": "1.0.0",
+  "description": "node testing",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Servicesatdoorisb/Test111.git"
+  },
+  "keywords": [
+    "aaa",
+    "keywords"
+  ],
+  "author": "servicesatdoorisb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Servicesatdoorisb/Test111/issues"
+  },
+  "homepage": "https://github.com/Servicesatdoorisb/Test111#readme"
+}
