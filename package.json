@@ -2,7 +2,8 @@
   "name": "mynodeaaa",
   "version": "1.0.0",
   "description": "node testing",
-  "main": "javascript.js",
+  "main": "events.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Servicesatdoorisb/Test111/issues"
   },
-  "homepage": "https://github.com/Servicesatdoorisb/Test111#readme"
+  "homepage": "https://github.com/Servicesatdoorisb/Test111#readme",
+  "dependencies": {
+    "@angular/cli": "^18.0.1"
+  }
 }
